@@ -322,7 +322,7 @@ loop:
 					set[v] = struct{}{}
 				}
 			}
-			for k := range set {
+			for k, _ := range set {
 				arr := make([]int, len(*k))
 				for i, v := range *k {
 					arr[i] = v
