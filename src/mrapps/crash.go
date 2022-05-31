@@ -16,10 +16,12 @@ import "os"
 import "sort"
 import "strconv"
 import "time"
+import "fmt"
 
 func maybeCrash() {
 	max := big.NewInt(1000)
 	rr, _ := crand.Int(crand.Reader, max)
+	fmt.Printf("rr.Int64(): %v",rr.Int64())
 	if rr.Int64() < 330 {
 		// crash!
 		os.Exit(1)

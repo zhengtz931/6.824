@@ -21,7 +21,7 @@ type ExampleReply struct {
 	Y int
 }
 type ReportWorkArgs struct {
-	issuccess bool
+	IsSuccess bool
 	MapId      int
 	ReduceId   int
 	RetryNum   int
